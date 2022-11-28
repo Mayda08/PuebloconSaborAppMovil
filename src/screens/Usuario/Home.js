@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image, ScrollView ,TextInput, LinearGradient, TouchableOpacity} from 'react-native'
 import React from 'react'
 
-const Home=({navigation})=> {
+const HomeScreen=({navigation})=> {
   return (
     <View style={{
         backgroundColor:"#FFF",
@@ -183,4 +183,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default Home
+export default HomeScreen
