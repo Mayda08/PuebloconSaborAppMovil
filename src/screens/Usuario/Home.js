@@ -105,11 +105,11 @@ const styles = StyleSheet.create({
     conttyl:{
         flexDirection:"row",
         alignItems:"center",
-        marginTop:50,
+        marginTop:65,
         width:"100%"
     },
     texthe:{
-        fontSize:18,
+        fontSize:25,
         color:"#FFF",
         fontWeight:"bold"
     },

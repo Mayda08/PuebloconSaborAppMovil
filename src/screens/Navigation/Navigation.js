@@ -5,6 +5,9 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import Login from '../Auth/Login';
 import Registro from '../Auth/Registro';
 import MyDrawer from './NavigationDrawer';
+import Locales from '../Usuario/Locales';
+import Ruta from '../Usuario/Ruta';
+import Opinion from '../Usuario/Opinion';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +24,9 @@ const  Navigation= props =>{
                     gestureEnabled={false}
                     options={{ headerShown: false }}
                 />
+                <Stack.Screen name="Locales" component={Locales} options={{headerShown:false}}/>
+                <Stack.Screen name="Ruta" component={Ruta} options={{headerShown:false}}/>
+                <Stack.Screen name="Opinion" component={Opinion} options={{headerShown:false}}/>
             </Stack.Navigator>
         </NavigationContainer>
     )

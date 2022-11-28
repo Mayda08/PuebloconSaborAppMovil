@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image, ScrollView ,TextInput, LinearGradient, TouchableOpacity} from 'react-native'
 import React from 'react'
 
-const Locales=()=> {
+const Locales=({navigation})=> {
   return (
     <View style={{
         backgroundColor:"#FFF",
@@ -46,13 +46,13 @@ const Locales=()=> {
         />
         </View>
              {/*Boton*/}
-            <TouchableOpacity onPress={()=>navigation.navigate("Locales")}>
+            <TouchableOpacity onPress={()=>navigation.navigate("Opinion")}>
             <Text style = {styles.botton}>
               Escribir una Opinion
             </Text>
             </TouchableOpacity>
            {/*Boton*/}
-           <TouchableOpacity onPress={()=>navigation.navigate("Locales")}>
+           <TouchableOpacity onPress={()=>navigation.navigate("Ruta")}>
             <Text style = {styles.botton}>
               Ruta
             </Text>

@@ -1,13 +1,15 @@
 import { View, Text, StyleSheet, Image, ScrollView ,TextInput, LinearGradient, TouchableOpacity} from 'react-native'
 import React from 'react'
 
-const Huejutla=({navigation})=> {
+const Ruta=({navigation})=> {
   return (
     <View style={{
         backgroundColor:"#FFF",
         flex:1
     }}>
-        <View style={styles.heade}>
+         <ScrollView style={{flex:1,backgroundColor:'#ffffff'}} 
+            showsVerticalScrollIndicator={false}>
+            <View style={styles.heade}>
                {/*}<Image
                     source={require('../../images/logotipo-pueblos-con-sabor.png')}
                     {/*}style={{
@@ -16,36 +18,28 @@ const Huejutla=({navigation})=> {
                         marginTop:50
                     }}
                 />{*/}
-            <View style={styles.conttyl}>
-                <View style={{width:"65%"}}>
-                    <Text style={styles.texthe}>Directorio</Text>
+                <View style={styles.conttyl}>
+                    <View style={{width:"65%"}}>
+                        <Text style={styles.texthe}>Ruta</Text>
+                    </View>
+                    <View style={{width:"35%",alignItems:"flex-end"}}>
+                        <TouchableOpacity >
+                            <Image
+                                source={require('../../images/logo.png')}
+                                style={styles.imglo}
+                            />
+                        </TouchableOpacity>
+                    </View>
                 </View>
-                <View style={{width:"33%",alignItems:"flex-end"}}>
-                    <TouchableOpacity onPress={()=> navigation.openDrawer()}>
-                        <Image
-                            source={require('../../images/logo.png')}
-                            style={styles.imglo}
-                        />
-                    </TouchableOpacity>
-                </View>
+               
             </View>
-               
-        </View>
         
-               {/**/}
-        <View style={{padding:20}}>
-            <Text style={styles.txtTitulo}>Huejutla</Text>
-
-        </View>
-               
-        <ScrollView style={{flex:1,backgroundColor:'#ffffff'}} 
-            showsVerticalScrollIndicator={false}>
-        
+                {/**/}
             <View style={{padding:20}}>
-                <Text style={styles.txtinf}>Informacion</Text>
+                <Text style={styles.txtTitulo}>Mapa</Text>
 
             </View>
-          
+               
         </ScrollView> 
                
     </View>
@@ -54,7 +48,7 @@ const Huejutla=({navigation})=> {
 const styles = StyleSheet.create({
     heade: {
         backgroundColor:"#F0640B",
-        height:'20%',
+        height:150,
         borderBottomLeftRadius:30,
         borderBottomRightRadius:30,
         paddingHorizontal:20
@@ -90,4 +84,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default Huejutla
+export default Ruta

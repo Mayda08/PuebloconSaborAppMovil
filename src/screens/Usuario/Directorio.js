@@ -100,7 +100,7 @@ const Directorio=({navigation})=> {
 const styles = StyleSheet.create({
     heade: {
         backgroundColor:"#F0640B",
-        height:170,
+        height:'20%',
         borderBottomLeftRadius:30,
         borderBottomRightRadius:30,
         paddingHorizontal:20
